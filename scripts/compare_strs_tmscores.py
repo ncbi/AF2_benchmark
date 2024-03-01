@@ -36,10 +36,6 @@ def get_tmscore(r,predfilepath):
 	tmscores = []
 	modelfiles = sorted(glob.glob(str(predfilepath) + "/*_relaxed*pdb"))
 
-	if len(modelfiles)==0:
-		tmscores = [0.0,0.0,0.0,0.0,0.0]
-		return tmscores
-
 	for model in modelfiles:
 		modelpath = Path(model)
 		model  = str(modelpath.parent) + "/" + modelpath.stem 
