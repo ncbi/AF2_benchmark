@@ -7,7 +7,6 @@
 ### 2. https://github.com/sokrypton/ColabFold
 ### 3. https://github.com/HWaymentSteele/AF_Cluster/tree/main
 ### 4. https://zhanggroup.org/TM-align/ and https://pypi.org/project/tmtools/
-### 5. https://github.com/jproney/AF2Rank
 
 ## Packages needed in python : Matplotlib, Seaborn, Pandas, Numpy
 
