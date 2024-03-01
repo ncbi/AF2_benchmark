@@ -1,6 +1,6 @@
 ## Overall steps
 1. Download PDBs corresponding to both conformations of fold-switching proteins
-2. Any proteins where one structure included only a short fragment or that had long gaps in the fold-switching region were excluded from the AF2Rank protocol. The final dataset consisted of 76 proteins (PDB IDs highlighted in supporting data of paper, Table S1A)
+2. Any proteins where one structure included only a short fragment or that had long gaps in the fold-switching region were excluded from the AF2Rank protocol. The final dataset consisted of 76 proteins (PDB IDs highlighted in supporting data of Table S1A)
 3. To ensure that we passed the same sequence to AF2 for fold-switched conformations, we truncated extraneous N- and C-terminal residues used for purification but endogenous to their respective sequences.
 4. If one structure included a domain that was not present in the other structure, that protein was excluded from the dataset
 5. Any short gaps in the structures were modeled with RosettaCM, and the top scoring Rosetta model (minimum 1000 models generated) with a TM-score greater than 0.9 compared to the native structure were then selected for use
@@ -17,4 +17,8 @@
 7. all_folds2_output/: Output directory generated from AF2Rank
 
 For more information on running AF2Rank, see https://github.com/jproney/AF2Rank
+
+References:
+1. Roney, J. P., & Ovchinnikov, S. (2022). State-of-the-art estimation of protein model accuracy using AlphaFold. Physical Review Letters, 129(23), 238101.
+2. Chakravarty, D., Schafer, J. W., Chen, E. A., Thole, J., & Porter, L. (2023). AlphaFold2 has more to learn about protein energy landscapes. bioRxiv, 2023-12.
 
