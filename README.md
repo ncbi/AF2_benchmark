@@ -8,7 +8,7 @@
 ### 3. https://github.com/HWaymentSteele/AF_Cluster/tree/main
 ### 4. https://zhanggroup.org/TM-align/ and https://pypi.org/project/tmtools/
 
-## Packages needed in python : Matplotlib, Seaborn, Pandas, Numpy
+## Packages needed in python : Matplotlib, Seaborn, Pandas, Numpy, tmtools 
 
 ### \**Important\** please change the paths in the python scripts before running them
 
