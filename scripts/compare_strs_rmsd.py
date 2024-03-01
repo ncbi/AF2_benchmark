@@ -80,7 +80,7 @@ def run_for_models(FH,data_dir,pdbfilepath1,pdbfilepath2):
 # setting path
 data_dir = Path('/Users/chakravartyd2/fold_switching/mchaourab_project/for_github_repo/data')
 pdb_dir = data_dir / "clean_chains"
-pred_dir = data_dir / "predictions"
+pred_dir = data_dir
 
 # input arguments
 pdb1 = sys.argv[1]
