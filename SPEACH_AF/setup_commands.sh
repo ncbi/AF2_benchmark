@@ -8,9 +8,9 @@ for i in `ls *pik`; do test=$(cut -d'.' -f1 <<< $i);
 		       cp /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*.fasta ${test}.fasta; 
 		       cp /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*/features.pkl ${test} ; 
 		       cp /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*/msas/pdb_hits.hhr ${test}/msas; 
-		       /data/Chakravarty_llp/mchaourab/mutate_stockholm.py /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*/msas/uniref90_hits.sto $i > ${test}/msas/uniref90_hits.sto; 
-		       /data/Chakravarty_llp/mchaourab/mutate_stockholm.py /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*/msas/mgnify_hits.sto $i > ${test}/msas/mgnify_hits.sto; 
-		       /data/Chakravarty_llp/mchaourab/mutate_a3m.py /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*/msas/bfd_uniclust_hits.a3m $i > ${test}/msas/bfd_uniclust_hits.a3m ; done
+		       ./mutate_stockholm.py /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*/msas/uniref90_hits.sto $i > ${test}/msas/uniref90_hits.sto; 
+		       ./mutate_stockholm.py /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*/msas/mgnify_hits.sto $i > ${test}/msas/mgnify_hits.sto; 
+		       ./mutate_a3m.py /data/Chakravarty_llp/AlphaFold_notemplates/all_FS_notemplates/${1}*/msas/bfd_uniclust_hits.a3m $i > ${test}/msas/bfd_uniclust_hits.a3m ; done
 
 ls *fasta > fastas.txt;
 ../../AF2_run.py fastas.txt $PWD;
