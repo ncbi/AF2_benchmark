@@ -1,7 +1,7 @@
 """
 Compare the predicted models with original PDBs
 report TM-scores for ranked 0 to 4
-input line is dirname pdb1 pdb2
+input line is pdb1 pdb2 predicted_models_path
 
 This version requires tmtools 0.0.2 (Python bindings around the TM-align code for structural alignment of proteins)
 check this for local installation
