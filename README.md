@@ -9,4 +9,4 @@
 
 **Important** please change the paths in the python scripts before running them
 
-# MSAs along with related log, output files generated from AF_Cluster, are in the compressed folder as msa_clusters.tar.gz  
+## MSAs along with related log, output files generated from AF_Cluster, are in the compressed folder as msa_clusters.tar.gz  
