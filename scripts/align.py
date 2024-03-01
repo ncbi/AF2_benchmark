@@ -175,7 +175,7 @@ def cal_rmsd(file1="/Users/chakravartyd2/fold_switching/mchaourab_project/for_gi
         return(si.rms)
 
 
-def cal_rmsd_partial(file1="//Users/chakravartyd2/fold_switching/mchaourab_project/for_github_repo/data/clean_chains/2oug_C.pdb", file2="/Users/chakravartyd2/fold_switching/mchaourab_project/for_github_repo/data/clean_chains/6c6s_D.pdb", start1=115, end1=162, start2=112, end2=162):
+def cal_rmsd_partial(file1="/Users/chakravartyd2/fold_switching/mchaourab_project/for_github_repo/data/clean_chains/2oug_C.pdb", file2="/Users/chakravartyd2/fold_switching/mchaourab_project/for_github_repo/data/clean_chains/6c6s_D.pdb", start1=115, end1=162, start2=112, end2=162):
     # define the PDB parser
     p = PDBParser(QUIET=True)
     # get the structure objects
