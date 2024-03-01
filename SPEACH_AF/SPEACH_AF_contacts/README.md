@@ -1,4 +1,4 @@
-# Scripts for efficiently generating the sets of Contacts to be mutated by Alanine by the SPEACH-AF algorithm
+# Scripts for efficiently generating the sets of contacts to be mutated to Alanine by the SPEACH-AF algorithm
 
 
 ## To run the code:
