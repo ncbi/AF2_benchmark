@@ -17,7 +17,7 @@ import pandas as pd
 import pickle
 import os
 
-#Molecule module taken from Srinivasan and Rose, PNAS 1999
+#Molecule class taken from Srinivasan and Rose, PNAS 1999
 class Molecule:
     """Class to describe a molecule.
 
