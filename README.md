@@ -13,3 +13,5 @@
 ### \**Important\** please change the paths in the python scripts before running them
 
 ### MSAs along with related log, output files generated from AF_Cluster, are in AFcluster_MSAs
+
+## Code was run and tested on LINUX and MAC OSX machines.
