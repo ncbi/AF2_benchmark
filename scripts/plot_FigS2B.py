@@ -13,7 +13,7 @@ plt.rcParams["font.weight"] = "bold"
 plt.rcParams["font.family"] = "Helvetica"
 plt.tight_layout()
 
-# the values are taken from data/success_with_RMSD_metric.xlsx
+# the values are taken from data/success_with_RMSD_metric_revised.xlsx
 val1 = [1, 9, 2, 2, 1, 6, 11, 39]
 val2 = [7, 1, 5, 3, 5, 7, 17, 17]
 
