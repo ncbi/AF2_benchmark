@@ -13,7 +13,7 @@ plt.rcParams.update({'font.size': 20})
 plt.rcParams["font.weight"] = "bold"
 plt.rcParams["font.family"] = "Helvetica"
 
-# values are taken from success_with_TMscore_metric.xlsx
+# values are taken from success_with_TMscore_metric_revised.xlsx
 val1 = [2, 9, 5, 2, 1, 7, 12, 36] # unique
 val2 = [6, 2, 7, 5, 6, 11, 20, 20] # common
 
