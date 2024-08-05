@@ -1,4 +1,4 @@
-# Scripts for generating plots and figures for the AF2_benchmark project
+# Scripts for generating plots and figures for AlphaFold predictions of fold-switched conformations are driven by structure memorization
 ## MSA and Predictions generated using AlphaFold2, ColabFold, MSA clustering done using AF_Cluster
 ## TM-align was used to calculate TM-score, using python binding around the TM-align code for structural alignment of proteins
 
