@@ -4,7 +4,7 @@
 3.	Run AF-cluster to generate clusters and shallow MSAs.
 4.	Feed the shallow MSAs to ColabFold generate predictions.
 
-## example Bash commands/scripts for the steps
+## Example Bash commands/scripts for the steps
 Step1 –
 Create a batch input file (e.g., colabfold-search.sh) to create the MSAs:
 "#!/bin/bash
@@ -29,3 +29,10 @@ colabfold_batch --num-relax 50 --num-seeds 10 --amber --use-gpu-relax 0_msas 0_m
 
 Run the batch file.
 sbatch --time=48:00:00 --cpus-per-task=8 --mem=48g --gres=lscratch:100,gpu:a100:1 --partition=gpu run_colabfold_0.sh
+
+## Successful predictions generated from AF_cluster added 
+Please combine and uncompress the these files as follows - 
+
+"cat afcluster_success.tar.gz.aa afcluster_success.tar.gz.ab afcluster_success.tar.gz.ac afcluster_success.tar.gz.ad afcluster_success.tar.gz.ae | tar xvfz -"
+
+The resulting folder will have details on the protein pairs as a .CSV file and sub-folders with PDB structures (predictions), PyMol sessions of the successful predictions.
