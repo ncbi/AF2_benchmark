@@ -23,7 +23,9 @@ python AF_Cluster/scripts/ClusterMSA.py 0 -i 0.a3m -o 0_msas
 Step3-
 Run Colabfold on the shallow MSAs generated from AF-cluster-
 Create a batch input file to run ColabFold
+
 #!/bin/bash
+
 module load colabfold
 colabfold_batch --num-relax 50 --num-seeds 10 --amber --use-gpu-relax 0_msas 0_msas_models/
 
@@ -37,7 +39,16 @@ Please combine and uncompress the these files as follows -
 
 The resulting folder will have details on the protein pairs as a .CSV file and sub-folders with PDB structures (predictions), PyMol sessions of the successful predictions.
 
-## TM-scores and prediction confidence scores added for Successful predictions
-The compressed file afcluster_success_tmscores.tgz has the same folder format as the one having successful predictions (mentioned above). The predictions are ranked by confidence scores (percentage of residues with pLDDT > 70) followed by TM-score calculated using the fold-switching region. 
+## TM-scores and prediction confidence scores added for successful predictions
+The compressed file afcluster_success_tmscores.tgz has the same folder format as the one having successful predictions (mentioned above). 
 
-To generate the predictions with high confidence and good TM-scores (> 0.6), please use the MSAs provided in AFcluster_MSAs. 
+The predictions are ranked by confidence scores (percentage of residues with pLDDT > 70) followed by TM-score calculated using the fold-switching region. 
+
+To generate the predictions with high confidence and good TM-scores (> 0.6), please use the MSAs provided in AFcluster_MSAs. Please uncompress the file afcluster_success_tmscores.tgz to get the folder "success_with_AFcluster_scores/"
+
+For, e.g., to generate the best-ranked prediction for AIAT, 3t1p, see the first line in the AIAT/3t1p_A_tmscores_fs_all.csv
+
+Description of header # name of file rank_pred, confidence score, TM-score1 (w.r.t Fold1), TM-score2 (w.r.t Fold2)
+"7_047 001,98.11,0.4,0.67"
+
+To get the MSAs of the best prediction, please use the sub_5/7_msas/ in AFcluster_MSAs (check info_all_runs,txt for that information) and use the 7_047.a3m file in that folder, submit that MSA file to ColabFold to generate predictions. 
