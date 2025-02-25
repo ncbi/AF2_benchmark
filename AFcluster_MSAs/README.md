@@ -36,3 +36,8 @@ Please combine and uncompress the these files as follows -
 "cat afcluster_success.tar.gz.aa afcluster_success.tar.gz.ab afcluster_success.tar.gz.ac afcluster_success.tar.gz.ad afcluster_success.tar.gz.ae | tar xvfz -"
 
 The resulting folder will have details on the protein pairs as a .CSV file and sub-folders with PDB structures (predictions), PyMol sessions of the successful predictions.
+
+## TM-scores and prediction confidence scores added for Successful predictions
+The compressed file afcluster_success_tmscores.tgz has the same folder format as the one having successful predictions (mentioned above). The predictions are ranked by confidence scores (percentage of residues with pLDDT > 70) followed by TM-score calculated using the fold-switching region. 
+
+To generate the predictions with high confidence and good TM-scores (> 0.6), please use the MSAs provided in AFcluster_MSAs. 
